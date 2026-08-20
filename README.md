@@ -13,6 +13,7 @@ This repository is organized into distinct categories. Review the individual `RE
 
 * **`simulations/`**: MOOSE input scripts (`.i`) defining the finite element physics, materials, and boundary conditions.
 * **`meshes/`**: Gmsh geometry definitions (`.geo`) and generated spatial mesh files (`.msh`).
+* **`geo files/`**: Gmsh geometry definition files (`.geo`) used to construct the physical domains.
 * **`data/`**: Structured training datasets and raw extracted simulation outputs (`.csv`, `.xlsx`).
 * **`scripts/`**: Python pipelines for data processing, machine learning training via JAX/Equinox, and prediction generation (`.py`).
 * **`models/`**: Serialized machine learning artifacts, including neural network weights (`.eqx`) and data transformations (`.pkl`).
