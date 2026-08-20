@@ -1,0 +1,3 @@
+time,max_compressive_yy_concrete,max_compressive_yy_ground,max_disp_x,max_plastic_strain_soil,max_settlement_y,max_tensile_yy_concrete,max_vm_concrete,max_vm_ground,min_disp_x
+0,0,0,0,0,0,0,0,0,0
+1,-177681.91139363,-485895.37232862,8.3555359828296e-05,-0.00011938951411683,-0.14125315804079,2472.7518150487,231224.6529162,271088.14266135,-8.8051850637723e-05

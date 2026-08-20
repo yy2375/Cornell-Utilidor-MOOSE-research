@@ -1,0 +1,71 @@
+{
+  "testharness": {
+    "version": 7,
+    "validation_version": 2,
+    "start_time": "2025-09-23 20:26:11",
+    "end_time": "2025-09-23 20:26:12",
+    "args": [
+      "-j",
+      "2"
+    ],
+    "input_file_name": "tests",
+    "root_dir": "/home/yiksany/projects/dog",
+    "sep_files": false,
+    "scheduler": "RunParallel",
+    "moose_dir": "/home/yiksany/projects/moose"
+  },
+  "environment": {
+    "hostname": "Laptop02",
+    "user": "yiksany"
+  },
+  "tests": {
+    "test:kernels/simple_diffusion": {
+      "tests": {
+        "test": {
+          "status": {
+            "status": "OK",
+            "status_message": "",
+            "fail": false,
+            "caveats": []
+          },
+          "timing": {
+            "main": 0.38539791107177734,
+            "tester_prepare": 0.0007963180541992188,
+            "runner_spawn": 0.05037569999694824,
+            "runner_run": 0.2705202102661133,
+            "tester_post_spawn": 2.3603439331054688e-05,
+            "runner_wait": 0.2707326412200928,
+            "runner_finalize": 2.8371810913085938e-05,
+            "tester_run": 0.06256365776062012,
+            "job_cleanup": 7.3909759521484375e-06
+          },
+          "tester": {
+            "name": "Exodiff",
+            "command": "/home/yiksany/projects/dog/dog-opt -i simple_diffusion.i --disable-perf-graph-live --error --error-override --compute-device=cpu",
+            "input_file": "/home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/simple_diffusion.i",
+            "json_metadata": {}
+          },
+          "output_files": [
+            "/home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/simple_diffusion_out.e"
+          ],
+          "output": {
+            "runner_run": "Framework Information:\nMOOSE Version:           git commit 0324ceb8a9 on 2025-09-22\nLibMesh Version:         \nPETSc Version:           3.23.4\nSLEPc Version:           3.23.2\nCurrent Time:            Tue Sep 23 20:26:11 2025\nExecutable Timestamp:    Mon Sep 22 16:01:34 2025\n\nInput File(s):\n  /home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/simple_diffusion.i\n\nCommand Line Argument(s):\n  --disable-perf-graph-live\n  --error\n  --error-override\n  --compute-device=cpu\n\nCheckpoint:\n  Wall Time Interval:      Every 3600 s\n  User Checkpoint:         Disabled\n  # Checkpoints Kept:      2\n  Execute On:              TIMESTEP_END \n\nParallelism:\n  Num Processors:          1\n  Num Threads:             1\n\nMesh: \n  Parallel Type:           replicated\n  Mesh Dimension:          2\n  Spatial Dimension:       2\n  Nodes:                   121\n  Elems:                   100\n  Num Subdomains:          1\n\nNonlinear System:\n  Num DOFs:                121\n  Num Local DOFs:          121\n  Variables:               \"u\" \n  Finite Element Types:    \"LAGRANGE\" \n  Approximation Orders:    \"FIRST\" \n\nExecution Information:\n  Executioner:             Steady\n  Solver Mode:             Preconditioned JFNK \n  PETSc Preconditioner:    hypre boomeramg \n 0 Nonlinear |R| = \u001b[32m3.082207e+00\u001b[39m\n      0 Linear |R| = \u001b[32m3.082207e+00\u001b[39m\n      1 Linear |R| = \u001b[32m1.034260e-01\u001b[39m\n      2 Linear |R| = \u001b[32m2.616261e-03\u001b[39m\n      3 Linear |R| = \u001b[32m9.194723e-05\u001b[39m\n      4 Linear |R| = \u001b[32m1.366911e-06\u001b[39m\n 1 Nonlinear |R| = \u001b[32m1.373820e-06\u001b[39m\n      0 Linear |R| = \u001b[32m1.373820e-06\u001b[39m\n      1 Linear |R| = \u001b[32m3.507042e-08\u001b[39m\n      2 Linear |R| = \u001b[32m4.049792e-10\u001b[39m\n      3 Linear |R| = \u001b[32m1.351613e-11\u001b[39m\n 2 Nonlinear |R| = \u001b[32m1.351556e-11\u001b[39m\n\u001b[32m Solve Converged!\u001b[39m\n",
+            "runner": "",
+            "tester": "Running exodiff: /home/yiksany/projects/moose/framework/contrib/exodiff/exodiff -m  -F 1e-10 -t 5.5e-06  /home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/gold/simple_diffusion_out.e /home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/simple_diffusion_out.e\n\n   *****************************************************************\n              EXODIFF\t(Version: 2.90) Modified: 2018-02-15\n              Authors:  Richard Drake, rrdrake@sandia.gov           \n                        Greg Sjaardema, gdsjaar@sandia.gov          \n              Run on    2025/09/23   20:26:12 EDT\n   *****************************************************************\n\nReading first file ... \nReading second file ... \n  FILE 1: /home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/gold/simple_diffusion_out.e\n   Title: simple_diffusion_test_out.e\n          Dim = 2, Blocks = 1, Nodes = 121, Elements = 100, Nodesets = 4, Sidesets = 4\n          Vars: Global = 0, Nodal = 1, Element = 0, Nodeset = 0, Sideset = 0, Times = 2\n\n  FILE 2: /home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/simple_diffusion_out.e\n   Title: simple_diffusion_out.e\n          Dim = 2, Blocks = 1, Nodes = 121, Elements = 100, Nodesets = 4, Sidesets = 4\n          Vars: Global = 0, Nodal = 1, Element = 0, Nodeset = 0, Sideset = 0, Times = 2\n\nexodiff: INFO .. Map option is not needed.\n\nNodal coordinates will be compared .. tol:    1e-06 (absolute), floor:        0\nTime step values will be compared .. tol:  5.5e-06 (relative), floor:    1e-10\nNo Global variables on either file.\nNodal variables to be compared:\n\tu                                tol:  5.5e-06 (relative), floor:    1e-10\nNo Element variables on either file.\nNo Element Attribute variables on either file.\nNo Nodeset variables on either file.\nNo Sideset variables on either file.\nSideset Distribution Factors will be compared .. tol:    1e-06 (relative), floor:        0\n\n  ==============================================================\n  NOTE: All node and element ids are reported as global ids.\n\nSideset Distribution Factors:\n  --------- Time step 1, 0.0000000e+00 ~ 0.0000000e+00, rel diff:  0.00000e+00 ---------\nNodal variables:\n  --------- Time step 2, 1.0000000e+00 ~ 1.0000000e+00, rel diff:  0.00000e+00 ---------\nNodal variables:\n\nexodiff: Files are the same\n\n",
+            "job": ""
+          }
+        }
+      },
+      "spec_file": "/home/yiksany/projects/dog/test/tests/kernels/simple_diffusion/tests"
+    }
+  },
+  "stats": {
+    "num_passed": 1,
+    "num_failed": 0,
+    "num_skipped": 0,
+    "num_total": 1,
+    "time_total": 0.420671,
+    "time_max": 0.2705202102661133,
+    "time_average": 0.2705202102661133
+  }
+}

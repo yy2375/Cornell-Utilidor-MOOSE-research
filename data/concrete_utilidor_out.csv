@@ -1,0 +1,3 @@
+time,corner_strain_xx,corner_strain_xy,corner_strain_yy,corner_stress_xx,corner_stress_yy,crown_strain_xx,roof_stress_bottom,roof_stress_top,u_y_crown,u_y_invert,wall_strain_yy,wall_stress_inner,wall_stress_outer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,-1.97353045684e-05,-0.000166950340751,-0.000103985780105,-1402440.3209,-3340201.25824,0.000456160699222,13095115.7776,-112766.799232,-0.127080533694,-0.121770427209,-0.000184275714384,-5307790.72943,-67613.091435

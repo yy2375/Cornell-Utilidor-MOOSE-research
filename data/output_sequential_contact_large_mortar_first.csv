@@ -1,0 +1,8 @@
+time,invert_disp_y,invert_plastic_strain,invert_stress_vm,left_disp_x,left_plastic_strain,left_stress_vm,max_compressive_yy_concrete,max_compressive_yy_ground,max_plastic_strain_soil,max_principal_stress_concrete,max_settlement_y,max_tensile_yy_concrete,max_vm_concrete,max_vm_ground,right_disp_x,right_plastic_strain,right_stress_vm,top_disp_y,top_plastic_strain,top_stress_vm
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0.00125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0.00140625,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0.00142578125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0.001435546875,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0.00143798828125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0.001439208984375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
